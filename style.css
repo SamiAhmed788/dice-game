@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to left, #660066 0%, #ff3300 100%);
+}
+
+.mainDiv {
+    width: 100%; 
+    /* border: 2px solid red; */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentScoreDiv {
+    background-color: #bf2e57;
+    border: none !important;
+    border-radius: 8px !important;
+    color: white !important;
+    padding: 0.3rem 3rem !important;
+    width: fit-content;
+}
+.currentScoreDiv:hover {
+    background: linear-gradient(to left, #742f68, #ad2937);
+}
+
+#totalScore1,#totalScore2 {
+    color: #ffffff !important;
+    font-size: 4.8rem;
+}
+
+.player1,
+.player2 {
+    width: 50% !important; 
+    background-color: #fd5465;
+    border: none;
+    padding: 5rem 2rem !important ;
+
+}
+.player1 {
+    background-color: #742f68;
+    width: auto;
+    border-radius: 12px 0px 0px 12px !important;
+}
+.player2 {
+ 
+    border-radius: 0px 12px 12px 0px !important;
+}
+
+.buttons {
+    background-color: #f4eef0;
+    border: none;
+    border-radius: 10rem;
+}
+
+.centerBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+}
+.centerBtns button {
+    padding: 0.60rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+}
+.diceImage {
+    border-radius: 10px;
+}
+
+.myModal{   
+    color: #ffffff;
+    text-transform: capitalize;
+  background-color: #360000;
+    border-radius:15px;
+    position: absolute;
+    display: block;
+    padding: 5rem;
+}
+
+.myModal input {
+    height: 2rem;
+    width: 12rem;
+}
+.myModal h1 {
+    padding: 5rem;
+}
+
+.myModal img {
+    padding: 0.5rem 0.5rem 0rem 0rem;
+}
+
+
+@media (max-width:400px) {
+    .mainDiv {
+        padding: 1rem !important;
+    }
+    .currentScoreDiv {
+    padding: 0rem 1rem !important;
+}
+.diceImage {
+    width: 55px;
+}
+.centerBtns button {
+        padding: 0.40rem;
+    }
+    .myModal h1 {
+        padding: 2.5rem;
+    }
+    
+}
